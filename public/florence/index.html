@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Explore Florence, Italy, on an interactive map and build your own walking itinerary.">
+<title>Firenze on Foot | An Interactive Florence Travel Guide</title>
+<link rel="stylesheet" href="./style.css">
+<script src="./guide.js" defer></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="#top">Firenze <i>on Foot</i></a><nav aria-label="Main navigation"><a href="#explore">Explore</a><a href="#itinerary">My itinerary <span id="count">0</span></a></nav></header>
+<main id="top">
+<section class="hero" aria-labelledby="title">
+  <div class="hero-copy"><p class="eyebrow">Tuscany, Italy</p><h1 id="title">Florence<br><em>on Foot</em></h1><p>From Brunelleschi’s dome to sunset above the Arno. Pick your stops and make a day of it.</p><a class="primary" href="#explore">Explore the map</a></div>
+  <figure><img src="./florence.jpg" width="3536" height="2098" alt="The Duomo and terracotta rooftops seen from Piazzale Michelangelo"><figcaption>Florence from Piazzale Michelangelo</figcaption></figure>
+</section>
+<section class="explore" id="explore" aria-labelledby="explore-title">
+  <div class="section-head"><div><p class="eyebrow">The city guide</p><h2 id="explore-title">Find your stops</h2></div><p>Choose a pin or filter by interest.</p></div>
+  <div class="filters" role="group" aria-label="Filter places" id="filters"></div>
+  <div class="explorer">
+    <div class="map" role="group" aria-label="Illustrated Florence map">
+      <span class="compass" aria-hidden="true">↑ N</span><span class="district north" aria-hidden="true">CENTRO STORICO</span><span class="district south" aria-hidden="true">OLTRARNO</span>
+      <div class="river" aria-hidden="true"></div><span class="river-label" aria-hidden="true">Arno</span><div id="pins"></div><span class="map-key">Illustrated map · distances approximate</span>
+    </div>
+    <article class="place" id="place" aria-live="polite"></article>
+  </div>
+  <noscript>Enable JavaScript to explore the pins and build an itinerary.</noscript>
+</section>
+<section class="itinerary" id="itinerary" aria-labelledby="plan-title">
+  <div><p class="eyebrow">Your walking plan</p><h2 id="plan-title">My itinerary</h2><p>Start with a themed walk or add your own stops from the map. Stops stay saved in this browser.</p><div class="filters" id="presets" role="group" aria-label="Suggested walks"></div><p id="feedback" role="status"></p></div>
+  <div class="plan"><p id="empty">Your itinerary is empty. Add a place or choose a walk to get started.</p><ol id="stops"></ol><a id="directions" class="primary" target="_blank" rel="noopener" hidden>Walking directions</a></div>
+</section>
+</main>
+<footer><a class="brand" href="#top">Firenze <i>on Foot</i></a><p>Visitor information from <a href="https://www.visittuscany.com/en/ideas/first-time-in-florence-what-to-see/">Visit Tuscany</a> and <a href="https://www.italia.it/en/tuscany/florence/things-to-do/florence-historic-center">Italia.it</a>. Skyline photo by <a href="https://commons.wikimedia.org/wiki/File:Skyline_of_Florence.jpg">Hermetiker</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p></footer>
+</body>
+</html>
